@@ -15,7 +15,7 @@ namespace ControleMedicamentos.ConsoleApp.ModuloFuncionario
             {
                 ApresentarCabecalho();
 
-                Console.WriteLine("Visualizando Funcionarios...");
+                Console.WriteLine("Visualizando Funcionários...");
             }
 
             Console.WriteLine();
@@ -44,13 +44,13 @@ namespace ControleMedicamentos.ConsoleApp.ModuloFuncionario
 
         protected override EntidadeBase ObterRegistro()
         {
-            Console.Write("Digite o nome do Funcionario: ");
+            Console.Write("Digite o nome do funcionário: ");
             string nome = Console.ReadLine();
 
-            Console.Write("Digite o telefone do Funcionario: ");
+            Console.Write("Digite o telefone do funcionário: ");
             string telefone = Console.ReadLine();
 
-            Console.Write("Digite o CPF do Funcionario: ");
+            Console.Write("Digite o CPF do funcionário: ");
             string cpf = Console.ReadLine();
 
             Funcionario novoFuncionario = new Funcionario(nome, telefone, cpf);

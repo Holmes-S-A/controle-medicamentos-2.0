@@ -100,7 +100,7 @@ namespace ControleMedicamentos.ConsoleApp.ModuloRequisicaoSaida
 
             Paciente pacienteSelecionado = (Paciente)repositorioPaciente.SelecionarPorId(idPaciente);
 
-            Console.Write("Digite a quantidade do medicamente que deseja retirar: ");
+            Console.Write("Digite a quantidade do medicamento que deseja retirar: ");
             int quantidade = Convert.ToInt32(Console.ReadLine());
 
             RequisicaoSaida novaRequisicao = new RequisicaoSaida(medicamentoSelecionado, pacienteSelecionado, quantidade);
