@@ -1,6 +1,6 @@
 ﻿using ControleMedicamentos.ConsoleApp.Compartilhado;
 
-namespace ControleMedicamentos.ConsoleApp.ModuloRequisicao
+namespace ControleMedicamentos.ConsoleApp.ModuloRequisicaoSaida
 {
     internal class RepositorioRequisicaoSaida : RepositorioBase
     {

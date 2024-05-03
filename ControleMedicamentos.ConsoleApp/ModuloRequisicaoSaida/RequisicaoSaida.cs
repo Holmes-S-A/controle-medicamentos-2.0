@@ -2,7 +2,7 @@
 using ControleMedicamentos.ConsoleApp.ModuloMedicamento;
 using ControleMedicamentos.ConsoleApp.ModuloPaciente;
 
-namespace ControleMedicamentos.ConsoleApp.ModuloRequisicao
+namespace ControleMedicamentos.ConsoleApp.ModuloRequisicaoSaida
 {
     internal class RequisicaoSaida : EntidadeBase
     {

@@ -2,7 +2,7 @@
 using ControleMedicamentos.ConsoleApp.ModuloMedicamento;
 using ControleMedicamentos.ConsoleApp.ModuloPaciente;
 
-namespace ControleMedicamentos.ConsoleApp.ModuloRequisicao
+namespace ControleMedicamentos.ConsoleApp.ModuloRequisicaoSaida
 {
     internal class TelaRequisicaoSaida : TelaBase
     {
@@ -56,8 +56,12 @@ namespace ControleMedicamentos.ConsoleApp.ModuloRequisicao
 
             Console.WriteLine(
                 "{0, -10} | {1, -15} | {2, -15} | {3, -20} | {4, -5}",
-                "Id", "Medicamento", "Paciente", "Data de Requisição", "Quantidade"
-            );
+                "Id", 
+                "Medicamento", 
+                "Paciente", 
+                "Data de Requisição", 
+                "Quantidade"
+                );
 
             EntidadeBase[] requisicoesCadastradas = repositorio.SelecionarTodos();
 
@@ -73,7 +77,7 @@ namespace ControleMedicamentos.ConsoleApp.ModuloRequisicao
                     requisicao.Paciente.Nome,
                     requisicao.DataRequisicao.ToShortDateString(),
                     requisicao.QuantidadeRetirada
-                );
+                    );
             }
 
             Console.ReadLine();
